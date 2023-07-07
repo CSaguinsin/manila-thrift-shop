@@ -28,5 +28,20 @@
     width: 50px;
     height: 600px; /* Set the desired height value in pixels */
 }
+/* products css */
 
+.header {
+    padding-top: 20px;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.tshirt{
+    font-family: 'Krona One', sans-serif;
+}
+.product3{
+    height: 10px;
+}
+/* end of product css */
 /* end of Home.jsx css */
