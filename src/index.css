@@ -3,9 +3,13 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
+* {
+    font-family: 'Krona One', sans-serif;
+}
+
 /* Home.jsx css */
 .Logo {
-    height: 200px;
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -39,9 +43,11 @@
 
 .tshirt{
     font-family: 'Krona One', sans-serif;
+    padding-left: 60px;
 }
 .product3{
     height: 10px;
 }
 /* end of product css */
+
 /* end of Home.jsx css */
