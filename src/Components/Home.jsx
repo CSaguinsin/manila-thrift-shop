@@ -294,21 +294,24 @@ const Slides = () => {
       img: carousel3,
     },
     {
-      img: carousel4
-    }
+      img: carousel4,
+    },
   ];
 
   return (
     <div className='max-w-[1400px] h-[780] w-full m-auto py-16 px-4 relative'>
-      <div style={{ backgroundImage: `url(${slides[3].img})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'></div>
-    {/* Left arrow */}
-    <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white curosr-pointer'>
-      <BsChevronCompactLeft size={30} />
-    </div>
-    {/* Right Arrow */}
-    <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white curosr-pointer'>
-      <BsChevronCompactRight size={30} />
-    </div>
+      <div
+        style={{ backgroundImage: `url(${slides[0].img})` }}
+        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+      ></div>
+      {/* Left arrow */}
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <BsChevronCompactLeft size={30} />
+      </div>
+      {/* Right Arrow */}
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <BsChevronCompactRight size={30} />
+      </div>
     </div>
   );
 };
