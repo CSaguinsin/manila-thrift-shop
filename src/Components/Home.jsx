@@ -1,9 +1,11 @@
 import React from 'react';
+import {useState} from 'react';
 import Logo from '../assets/logo/logo.png';
 import displayimg from "../assets/assets/streetware 6.jpg";
 import displayimg2 from  "../assets/assets/streetware 3.jpg";
 import displayimg3 from "../assets/assets/streetware 5.jpg";
 import Carl_Logo from "../assets/logo/carl logo.png";
+import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 
 // t shirts import
 import product1 from '../assets/products/tshirts/product1.jpg';
@@ -280,6 +282,37 @@ const PANTS = () => {
 }
 
 
+const Slides = () => {
+  const slides = [
+    {
+      img: carousel1,
+    },
+    {
+      img: carousel2,
+    },
+    {
+      img: carousel3,
+    },
+    {
+      img: carousel4
+    }
+  ];
+
+  return (
+    <div className='max-w-[1400px] h-[780] w-full m-auto py-16 px-4 relative'>
+      <div style={{ backgroundImage: `url(${slides[3].img})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'></div>
+    {/* Left arrow */}
+    <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white curosr-pointer'>
+      <BsChevronCompactLeft size={30} />
+    </div>
+    {/* Right Arrow */}
+    <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white curosr-pointer'>
+      <BsChevronCompactRight size={30} />
+    </div>
+    </div>
+  );
+};
+
 
 const Footer = () => {
   return (
@@ -307,5 +340,5 @@ const Footer = () => {
 export default Home;
 export { PANTS };
 export { TSHIRT };
-
+export { Slides };
 export { Footer };
