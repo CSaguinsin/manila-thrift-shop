@@ -29,6 +29,14 @@ import pants7 from '../assets/products/pants/product7.png';
 import pants8 from '../assets/products/pants/product8.png';
 // end of cargo pants import
 
+// carousel imports
+import carousel1 from '../assets/grahphic designs/carousel1.jpg';
+import carousel2 from '../assets/grahphic designs/carousel2.jpg';
+import carousel3 from '../assets/grahphic designs/carousel3.jpg';
+import carousel4 from '../assets/grahphic designs/carousel4.jpg';
+// end 
+
+
 
 const Home = () => {
   return (
@@ -271,6 +279,8 @@ const PANTS = () => {
   )
 }
 
+
+
 const Footer = () => {
   return (
     <>
@@ -297,4 +307,5 @@ const Footer = () => {
 export default Home;
 export { PANTS };
 export { TSHIRT };
+
 export { Footer };
