@@ -6,6 +6,8 @@ import displayimg2 from  "../assets/assets/streetware 3.jpg";
 import displayimg3 from "../assets/assets/streetware 5.jpg";
 import Carl_Logo from "../assets/logo/carl logo.png";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
+import Carousel from './Carousel';
+import Collab from "../assets/logo/mnlzara.png";
 
 // t shirts import
 import product1 from '../assets/products/tshirts/product1.jpg';
@@ -35,7 +37,7 @@ import pants8 from '../assets/products/pants/product8.png';
 import carousel1 from '../assets/grahphic designs/carousel1.jpg';
 import carousel2 from '../assets/grahphic designs/carousel2.jpg';
 import carousel3 from '../assets/grahphic designs/carousel3.jpg';
-import carousel4 from '../assets/grahphic designs/carousel4.jpg';
+
 // end 
 
 
@@ -282,37 +284,25 @@ const PANTS = () => {
 }
 
 
-const Slides = () => {
-  const slides = [
-    {
-      img: carousel1,
-    },
-    {
-      img: carousel2,
-    },
-    {
-      img: carousel3,
-    },
-    {
-      img: carousel4,
-    },
-  ];
+const Mnl = () => {
+  return (
+  <section>
+    <img className='Logo' src={Collab} alt="Logo" />
+  </section>
+  )
+}
+
+
+const ImageCarousel = () => {
+  const slides = [carousel1, carousel2, carousel3];
 
   return (
-    <div className='max-w-[1400px] h-[780] w-full m-auto py-16 px-4 relative'>
-      <div
-        style={{ backgroundImage: `url(${slides[0].img})` }}
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-      ></div>
-      {/* Left arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactLeft size={30} />
-      </div>
-      {/* Right Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactRight size={30} />
+    <div className="relative">
+      <div className="max-w-2xl carousel-container">
+        <Carousel slides={slides} width="400px" /> {/* Pass the width prop */}
       </div>
     </div>
+
   );
 };
 
@@ -343,5 +333,5 @@ const Footer = () => {
 export default Home;
 export { PANTS };
 export { TSHIRT };
-export { Slides };
+export {Mnl};
 export { Footer };

@@ -50,4 +50,14 @@
 }
 /* end of product css */
 
+.Collab {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+    max-width: 100px; /* Set the desired width value */
+  }
+
 /* end of Home.jsx css */

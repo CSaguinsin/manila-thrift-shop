@@ -1,27 +1,31 @@
 import './App.css';
 
+
+import carousel1 from '../src/assets/grahphic designs/carousel1.jpg'
+import carousel2 from '../src/assets/grahphic designs/carousel2.jpg'
+import carousel3 from '../src/assets/grahphic designs/carousel3.jpg'
+
+
 // Components
 import Navbar from './Components/Navbar';
-import Home from './Components/Home';
-import { TSHIRT } from './Components/Home';
-import { PANTS } from './Components/Home';
-import { Slides } from './Components/Home';
-import { Footer } from './Components/Home';
+import Home, { TSHIRT, PANTS, Mnl, Footer } from './Components/Home';
 
+import Carousel from './Components/Carousel';
 
+const App = () => {
+  const slides = [carousel1, carousel2, carousel3];
 
-function App() {
   return (
     <>
       <Navbar />
       <Home />
       <TSHIRT />
       <PANTS />
-      <Slides />
+      <Mnl />
+      <Carousel slides={slides} />
       <Footer />
     </>
   );
-}
-
+};
 
 export default App;
