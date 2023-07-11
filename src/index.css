@@ -50,11 +50,22 @@
 }
 /* end of product css */
 
-.Collab {
+/* .Collab {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 400px;
+} */
+
+.announcement{
+    text-align: center;
+    font-size: 30px;
 }
+
+.season {
+    color: #ff1616;
+}
+
 
 .carousel-container {
     max-width: 100px; /* Set the desired width value */

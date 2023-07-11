@@ -34,9 +34,7 @@ import pants8 from '../assets/products/pants/product8.png';
 // end of cargo pants import
 
 // carousel imports
-import carousel1 from '../assets/grahphic designs/carousel1.jpg';
-import carousel2 from '../assets/grahphic designs/carousel2.jpg';
-import carousel3 from '../assets/grahphic designs/carousel3.jpg';
+import Sale from '../assets/grahphic designs/sale.png';
 
 // end 
 
@@ -287,22 +285,24 @@ const PANTS = () => {
 const Mnl = () => {
   return (
   <section>
-    <img className='Logo' src={Collab} alt="Logo" />
+    {/* <img className='Collab' src={Collab} alt="Logo" /> */}
+    {/* <h1 className='announcement'>SOMETHING BIG IS COMING THIS <span className='season'>DECEMBER!</span></h1> */}
   </section>
   )
 }
 
 
 const ImageCarousel = () => {
-  const slides = [carousel1, carousel2, carousel3];
+  const slides = [Sale];
 
   return (
-    <div className="relative">
-      <div className="max-w-2xl carousel-container">
-        <Carousel slides={slides} width="400px" /> {/* Pass the width prop */}
+    <div>
+      <div className="relative">
+        <div className="max-w-2xl carousel-container">
+          <Carousel slides={slides} /> 
+        </div>
       </div>
     </div>
-
   );
 };
 

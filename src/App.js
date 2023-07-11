@@ -1,9 +1,10 @@
 import './App.css';
 
 
-import carousel1 from '../src/assets/grahphic designs/carousel1.jpg'
-import carousel2 from '../src/assets/grahphic designs/carousel2.jpg'
-import carousel3 from '../src/assets/grahphic designs/carousel3.jpg'
+import Sale from '../src/assets/grahphic designs/sale.png';
+import sale2 from '../src/assets/grahphic designs/sale2.png';
+import sale3 from '../src/assets/grahphic designs/sale3.png';
+import sale4 from '../src/assets/grahphic designs/sale4.png';
 
 
 // Components
@@ -13,7 +14,7 @@ import Home, { TSHIRT, PANTS, Mnl, Footer } from './Components/Home';
 import Carousel from './Components/Carousel';
 
 const App = () => {
-  const slides = [carousel1, carousel2, carousel3];
+  const slides = [Sale, sale2, sale3, sale4];
 
   return (
     <>
