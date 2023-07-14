@@ -5,7 +5,6 @@ export default function Carousel({
   autoSlide = false,
   autoSlideInterval = 3000,
   slides,
-  width = "100%", // Add this new prop with a default value of "100%"
 }: {
   autoSlide?: boolean;
   autoSlideInterval?: number;
@@ -25,7 +24,7 @@ export default function Carousel({
   }, []);
 
   return (
-    <div className="overflow-hidden relative" style={{ width }}>
+    <div className="overflow-hidden relative">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
@@ -53,6 +52,7 @@ export default function Carousel({
         <div className="flex items-center justify-center gap-2">
           {slides.map((_, i) => (
             <div
+              key={i}
               className={`
               transition-all w-3 h-3 bg-white rounded-full
               ${curr === i ? "p-2" : "bg-opacity-50"}

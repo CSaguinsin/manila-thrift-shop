@@ -1,31 +1,26 @@
-import './App.css';
-
-
-import Sale from '../src/assets/grahphic designs/sale.png';
-import sale2 from '../src/assets/grahphic designs/sale2.png';
-import sale3 from '../src/assets/grahphic designs/sale3.png';
-import sale4 from '../src/assets/grahphic designs/sale4.png';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components
 import Navbar from './Components/Navbar';
-import Home, { TSHIRT, PANTS, Mnl, Footer } from './Components/Home';
-
-import Carousel from './Components/Carousel';
+import Home from './Components/Home';
+import Orderpage from './Components/Orderpage';
+import ContactUs from './Components/Contact';
+import Newsletter from './Components/Newsletter';
+import Footer from './Components/Footer';
 
 const App = () => {
-  const slides = [Sale, sale2, sale3, sale4];
-
   return (
-    <>
-      <Navbar />
-      <Home />
-      <TSHIRT />
-      <PANTS />
-      <Mnl />
-      <Carousel slides={slides} />
+    <Router>
+      <Navbar /> {/* Render the Navbar outside the Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/orderpage" element={<Orderpage />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
+      <Newsletter />
       <Footer />
-    </>
+    </Router>
   );
 };
 

@@ -1,14 +1,15 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 
 const navigation = [
-  { name: 'HOME', href: '#', current: true },
-  { name: 'HOW TO ORDER', href: '#', current: false },
-  { name: 'SIZE CHART', href: '#', current: false },
-  { name: 'BLOGS', href: '#', current: false },
-  { name: 'CONTACT US', href: '#', current: false },
-]
+  { name: 'HOME', href: '/', current: true },
+  { name: 'HOW TO ORDER', href: '/how-to-order', current: false },
+  { name: 'SIZE CHART', href: '/size-chart', current: false },
+  { name: 'BLOGS', href: '/blogs', current: false },
+  { name: 'CONTACT US', href: '/contact-us', current: false },
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -35,19 +36,19 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-end sm:items-stretch sm:justify-end">
                 <div className="hidden sm:mr-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
+                  {navigation.map((item) => (
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
-                        style={{ fontFamily: "'Krona One', sans-serif" }} // Add the font-family style here
+                        style={{ fontFamily: "'Krona One', sans-serif" }}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
