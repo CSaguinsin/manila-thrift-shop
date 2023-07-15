@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ScrollTrigger from 'react-scroll-trigger';
+import './Css/Pants.css';
 // cargo pants import
 import pants1 from '../assets/products/pants/product1.png';
 import pants2 from '../assets/products/pants/product2.png';
@@ -11,6 +15,16 @@ import pants8 from '../assets/products/pants/product8.png';
 // end of cargo pants import
 
 const Pants = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  const handleScroll = (isVisible) => {
+    if (isVisible) {
+      AOS.refresh();
+    }
+  };
+      
     const products = [
       {
         id: 1,
@@ -79,37 +93,38 @@ const Pants = () => {
     ];
   
     return (
-      <>
-      <h6 className='tshirt'>CARGO PANTS</h6>
-        <div className="bg-white">
-          <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <h2 className="sr-only">Products</h2>
+      <ScrollTrigger onEnter={handleScroll} triggerOnLoad={false}>
+        <>
+          <h6 className="tshirt">CARGO PANTS</h6>
+          <div className="bg-white">
+            <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+              <h2 className="sr-only">Products</h2>
   
-            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-              {products.map((product) => (
-                <a key={product.id} href={product.href} className="group">
-                  <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg xl:aspect-h-8 xl:aspect-w-7">
-                    <img
-                      src={product.imageSrc}
-                      alt={product.imageAlt}
-                      className="h-full w-full object-cover object-center group-hover:opacity-75"
-                   />
-                  </div>
-                  <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                  <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
-                  <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                      <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                          Add to Cart!
+              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                {products.map((product) => (
+                  <a key={product.id} href={product.href} className="group" data-aos="fade-up">
+                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg xl:aspect-h-8 xl:aspect-w-7">
+                      <img
+                        src={product.imageSrc}
+                        alt={product.imageAlt}
+                        className="h-full w-full object-cover object-center group-hover:opacity-75"
+                      />
+                    </div>
+                    <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                    <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Add to Cart!
                       </span>
-                </button>
-                </a>
-              ))}
+                    </button>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </>
+        </>
+      </ScrollTrigger>
+    );
+  };
   
-    )
-  }
-
-export default Pants;
+  export default Pants;
