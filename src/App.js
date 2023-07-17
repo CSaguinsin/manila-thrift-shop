@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Orderpage from './Components/Orderpage';
 import SizeChart from './Components/SizeChart';
+import Blogs from './Components/Blogs';
 import ContactUs from './Components/Contact';
 import Newsletter from './Components/Newsletter';
 import Footer from './Components/Footer';
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/orderpage" element={<Orderpage />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path='/size-chart' element={<SizeChart />} />
+        <Route path='/blogs' element={<Blogs/>} />
       </Routes>
       <Newsletter />
       <Footer />
