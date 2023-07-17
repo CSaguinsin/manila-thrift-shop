@@ -43,45 +43,57 @@ const Blogs = () => {
         </section>
 
         <section>
-            <div>
-                <img src={Blogpost2} alt='blog' />
-                <h3 className='header3'>UMBRO: ON A MISSION TO PROMOTE THRIFT CULTURE</h3>
+        <div className='container2' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                <div className="image-container" style={{ marginRight: '40px' }}>
+                    <img className='blogpost' src={Blogpost2} alt='blog' />
+                    <h3 className='header3'><span className='classy'>UMBRO</span>: ON A MISSION TO PROMOTE THRIFT <br /> CULTURE</h3>
                     <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                            Click to learn more!
-                            </span>
+                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Click to learn more!
+                    </span>
                     </button>
-                <img src={Blogpost3} alt='blog' />
-                <h3>DJ DUO CODY AND HUDSON: ON CONQUERING SELF-DEOUBT</h3>
+                </div>
+                <div className="image-container" style={{ marginLeft: '40px' }}>
+                    <img className='blogpost' src={Blogpost3} alt='blog' />
+                    <h3> <span className='classy'>DJ DUO CODY AND HUDSON </span>: ON CONQUERING <br />SELF-DOUBT</h3>
                     <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                            Click to learn more!
-                            </span>
+                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Click to learn more!
+                    </span>
                     </button>
-                 
-                <img src={Blogpost4} alt='blog' />
-                <h3>STREET WARE URBAN FASHION:WHY GENZ IS MORE INTO STREETWARE</h3>
+                </div>
+                <div className="image-container" style={{ marginLeft: '40px' }}>
+                    <img className='blogpost3' src={Blogpost4} alt='blog' />
+                    <h3><span className='classy'>STREET WARE URBAN FASHION</span>:<br />  WHY GENZ IS MORE INTO STREETWARE</h3>
                     <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                Click to learn more!
-                                </span>
+                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Click to learn more!
+                    </span>
                     </button>
-                <img src={Blogpost6} alt='blog' />
-                <h3>LEAVING OUR COMFORT ZONES:COMFORT ZONE IS NOT THE BEST PLACE IF YOU WANT TO IMPROVE</h3>
+                </div>
+        </div>
+
+            
+        <div className='container2' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingTop: '50px' }}>
+                <div className="image-container" style={{ marginRight: '40px' }}>
+                    <img className='blogpost' src={Blogpost6} alt='blog' />
+                    <h3>LEAVING OUR <span className='classy'>COMFORT ZONES</span>: COMFORT ZONE IS <br /> NOT THE BEST PLACE IF YOU WANT TO IMPROVE</h3>
                     <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                    Click to learn more!
-                                    </span>
+                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Click to learn more!
+                    </span>
                     </button>
-                
-                <img src={Blogpost7} alt='blog' />
-                <h3>VENEM ON THRIFT SHOPS: WHY VENEM BAND CHOOSE THRIFT SHOP TO BUY CLOTHES</h3>
+                </div>
+                <div className="image-container" style={{ marginLeft: '40px' }}>
+                    <img className='blogpost' src={Blogpost7} alt='blog' />
+                    <h3><span className='classy'>VENEM ON THRIFT SHOPS</span>: WHY VENEM BAND <br /> CHOOSE THRIFT SHOP TO BUY CLOTHES</h3>
                     <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                        Click to learn more!
-                                        </span>
+                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Click to learn more!
+                    </span>
                     </button>
-            </div>
+                </div>
+        </div>
         </section>
     </>
   )

@@ -53,13 +53,23 @@ p {
     padding-bottom: 20px;
 }
 
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 5s ease, transform 5s ease;
-  }
-  
-  .animate-on-scroll.animated {
-    opacity: 4;
-    transform: translateY(0);
-  }
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.container2 > * {
+  margin-right: 10px;
+}
+
+.blogpost {
+  height: 600px;
+}
+
+.blogpost3 {
+  height: 600px;
+  width: 400px;
+}
