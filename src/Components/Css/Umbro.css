@@ -1,0 +1,24 @@
+.image-container {
+    display: flex;
+    justify-content: center; /* Optional: To center the images horizontally */
+  }
+  
+  .Umbro {
+    max-width: 100%;
+    height: auto;
+    margin: 20px; /* Optional: Add some margin between the images */
+  }
+  
+  /* Change image width on smaller screens (e.g., up to 768px width) */
+  @media screen and (max-width: 768px) {
+    .Umbro {
+      width: 150px; /* Adjust the width to your preference for smaller screens */
+    }
+  }
+  
+  /* Change image width on larger screens (e.g., above 768px width) */
+  @media screen and (min-width: 769px) {
+    .Umbro {
+      width: 400px; /* Adjust the width to your preference for larger screens */
+    }
+  }
