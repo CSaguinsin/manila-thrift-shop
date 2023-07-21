@@ -4,6 +4,9 @@ import 'aos/dist/aos.css';
 import './Css/Blogs.css';
 import RenderUmbroOnClick from './Blogs/RenderUmbroOnClick';
 import RenderDjDuoOnClick from './Blogs/RenderDjDuoOnClick';
+import RenderUrbanFashionOnClick from './Blogs/RenderUrbanFashionOnClick';
+import RenderComfortZoneOnClick from './Blogs/RenderComfortZoneOnClick';
+import RenderVenemOnClick from './Blogs/RenderVenemOnClick';
 import Logo from '../assets/logo/logo.png';
 import Classy from '../assets/grahphic designs/blogpost5.jpg';
 import Blogpost2 from '../assets/grahphic designs/blogpost2.jpg';
@@ -12,6 +15,7 @@ import Blogpost3 from '../assets/grahphic designs/blogpost3.jpg';
 import Blogpost4 from '../assets/grahphic designs/blogpost4.jpg';
 import Blogpost6 from '../assets/grahphic designs/blogpost6.jpg';
 import Blogpost7 from '../assets/grahphic designs/blogpost7.jpg';
+
 
 
 const Blogs = () => {
@@ -47,7 +51,7 @@ const Blogs = () => {
                     <div className="image-container" style={{ marginRight: '40px' }}>
                 <img className='blogpost' src={Blogpost2} alt='blog' />
                 <h3 className='header3'><span className='classy'>UMBRO</span>: ON A MISSION TO PROMOTE THRIFT <br /> CULTURE</h3>
-                <RenderUmbroOnClick /> {/* This renders the button and handles the click event */}
+                <RenderUmbroOnClick /> 
          </div>
                 <div className="image-container" style={{ marginLeft: '40px' }}>
                     <img className='blogpost' src={Blogpost3} alt='blog' />
@@ -57,11 +61,7 @@ const Blogs = () => {
                 <div className="image-container" style={{ marginLeft: '40px' }}>
                     <img className='blogpost3' src={Blogpost4} alt='blog' />
                     <h3><span className='classy'>STREET WARE URBAN FASHION</span>:<br />  WHY GENZ IS MORE INTO STREETWARE</h3>
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Click to learn more!
-                    </span>
-                    </button>
+                    <RenderUrbanFashionOnClick />
                 </div>
         </div>
 
@@ -70,20 +70,12 @@ const Blogs = () => {
                 <div className="image-container" style={{ marginRight: '40px' }}>
                     <img className='blogpost' src={Blogpost6} alt='blog' />
                     <h3>LEAVING OUR <span className='classy'>COMFORT ZONES</span>: COMFORT ZONE IS <br /> NOT THE BEST PLACE IF YOU WANT TO IMPROVE</h3>
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Click to learn more!
-                    </span>
-                    </button>
+                    <RenderComfortZoneOnClick />
                 </div>
                 <div className="image-container" style={{ marginLeft: '40px' }}>
                     <img className='blogpost' src={Blogpost7} alt='blog' />
                     <h3><span className='classy'>VENEM ON THRIFT SHOPS</span>: WHY VENEM BAND <br /> CHOOSE THRIFT SHOP TO BUY CLOTHES</h3>
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Click to learn more!
-                    </span>
-                    </button>
+                    <RenderVenemOnClick />
                 </div>
         </div>
         </section>

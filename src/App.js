@@ -10,13 +10,15 @@ import Blogs from './Components/Blogs';
 import ContactUs from './Components/Contact';
 import Newsletter from './Components/Newsletter';
 import Footer from './Components/Footer';
-import ParentUmbro from './Components/Blogs/ParentUmbro';
-import RenderUmbroOnClick from './Components/Blogs/RenderUmbroOnClick';
 
 
 // Blogs components
 import Umbro from './Components/Blogs/Umbro';
 import DjDuo from './Components/Blogs/DjDuo';
+import UrbanFashion from './Components/Blogs/UrbanFashion';
+import ComfortZone from './Components/Blogs/ComfortZone';
+import Venem from './Components/Blogs/Venem';
+
 const App = () => {
   return (
     <Router>
@@ -29,6 +31,9 @@ const App = () => {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/Umbro' element={<Umbro />} />
         <Route path='/DjDuo' element={<DjDuo/>} />
+        <Route path='/UrbanFashion' element={<UrbanFashion />} />
+        <Route path='/ComfortZone' element={<ComfortZone />} />
+        <Route path='/Venem' element={<Venem/>} />
       </Routes>
       <Newsletter />
       <Footer />
