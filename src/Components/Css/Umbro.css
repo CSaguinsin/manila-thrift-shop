@@ -1,4 +1,4 @@
-.image-container {
+.image-containers {
     display: flex;
     justify-content: center; /* Optional: To center the images horizontally */
   }

@@ -32,7 +32,7 @@ function Umbro() {
       </section>
 
       <section>
-        <div class='image-container'>
+        <div class='image-containers'>
           <img class='Umbro' src={Umbro1} alt='umbro' />
           <img class='Umbro' src={Umbro2} alt='umbro' />
           <img class='Umbro' src={Umbro3} alt='umbro' />
@@ -40,7 +40,7 @@ function Umbro() {
     </section>
 
       <section>
-        <div class='image-container'>
+        <div class='image-containers'>
             <img className='Umbro' src={Umbro4} alt='umbro' />
             <img className='Umbro' src={Umbro5} alt='umbro' />
             <img className='Umbro' src={Umbro6} alt='umbro' />

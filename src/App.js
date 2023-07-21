@@ -16,6 +16,7 @@ import RenderUmbroOnClick from './Components/Blogs/RenderUmbroOnClick';
 
 // Blogs components
 import Umbro from './Components/Blogs/Umbro';
+import DjDuo from './Components/Blogs/DjDuo';
 const App = () => {
   return (
     <Router>
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/size-chart' element={<SizeChart />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/Umbro' element={<Umbro />} />
+        <Route path='/DjDuo' element={<DjDuo/>} />
       </Routes>
       <Newsletter />
       <Footer />
