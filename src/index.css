@@ -63,3 +63,57 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+/* Add Tailwind CSS classes for responsiveness */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to a new line on smaller screens */
+    justify-content: center; /* Center the images horizontally */
+    gap: 1rem; /* Adjust the desired spacing between images */
+  }
+  
+  /* Set width and height for images */
+  .image1,
+  .image2,
+  .image3 {
+    width: 100%; /* Make images take up the full width of their container */
+    height: auto; /* Maintain the aspect ratio of the images */
+  }
+  
+  /* Apply responsive styles using media queries */
+  @media (min-width: 640px) {
+    .image1,
+    .image2,
+    .image3 {
+      width: 30%; /* On screens wider than 640px, set the image width to 30% of the container */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .image1,
+    .image2,
+    .image3 {
+      width: 20%; /* On screens wider than 768px, set the image width to 20% of the container */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .image1,
+    .image2,
+    .image3 {
+      width: 15%; /* On screens wider than 1024px, set the image width to 15% of the container */
+    }
+  }
+  
+  /* Handle larger screens such as 24-inch monitors */
+@media (min-width: 1920px) {
+    .image1,
+    .image2,
+    .image3 {
+      flex: 0 0 calc(10% - 1rem);
+      max-width: calc(10% - 1rem); /* On screens wider than 1920px (e.g., 24-inch monitors), set the image width to 10% of the container with a 1rem gap in between */
+    }
+  }
+  
+  /* The rest of your CSS remains the same... */
+  

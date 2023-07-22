@@ -47,8 +47,8 @@ const Blogs = () => {
         </section>
 
         <section>
-        <div className='container2' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-                    <div className="image-container" style={{ marginRight: '40px' }}>
+        <div className='container2'>
+                    <div className="image-container" >
                 <img className='blogpost' src={Blogpost2} alt='blog' />
                 <h3 className='header3'><span className='classy'>UMBRO</span>: ON A MISSION TO PROMOTE THRIFT <br /> CULTURE</h3>
                 <RenderUmbroOnClick /> 
@@ -66,13 +66,13 @@ const Blogs = () => {
         </div>
 
             
-        <div className='container2' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingTop: '50px' }}>
-                <div className="image-container" style={{ marginRight: '40px' }}>
+        <div className='container2' >
+                <div className="image-container" >
                     <img className='blogpost' src={Blogpost6} alt='blog' />
                     <h3>LEAVING OUR <span className='classy'>COMFORT ZONES</span>: COMFORT ZONE IS <br /> NOT THE BEST PLACE IF YOU WANT TO IMPROVE</h3>
                     <RenderComfortZoneOnClick />
                 </div>
-                <div className="image-container" style={{ marginLeft: '40px' }}>
+                <div className="image-container">
                     <img className='blogpost' src={Blogpost7} alt='blog' />
                     <h3><span className='classy'>VENEM ON THRIFT SHOPS</span>: WHY VENEM BAND <br /> CHOOSE THRIFT SHOP TO BUY CLOTHES</h3>
                     <RenderVenemOnClick />
