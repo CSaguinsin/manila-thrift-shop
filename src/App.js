@@ -18,6 +18,7 @@ import DjDuo from './Components/Blogs/DjDuo';
 import UrbanFashion from './Components/Blogs/UrbanFashion';
 import ComfortZone from './Components/Blogs/ComfortZone';
 import Venem from './Components/Blogs/Venem';
+import Payment from './Components/Payment';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path='/UrbanFashion' element={<UrbanFashion />} />
         <Route path='/ComfortZone' element={<ComfortZone />} />
         <Route path='/Venem' element={<Venem/>} />
+        <Route path="/Payment" element={<Payment />} />
       </Routes>
       <Newsletter />
       <Footer />
