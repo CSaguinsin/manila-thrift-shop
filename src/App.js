@@ -19,6 +19,8 @@ import UrbanFashion from './Components/Blogs/UrbanFashion';
 import ComfortZone from './Components/Blogs/ComfortZone';
 import Venem from './Components/Blogs/Venem';
 import Payment from './Components/Payment';
+import Checkout1 from './Components/Checkout';
+import Tshirts from './Components/Tshirts';
 
 const App = () => {
   return (
@@ -36,6 +38,8 @@ const App = () => {
         <Route path='/ComfortZone' element={<ComfortZone />} />
         <Route path='/Venem' element={<Venem/>} />
         <Route path="/Payment" element={<Payment />} />
+        <Route path="/Checkout" element={<Checkout1 />} />
+        <Route path='/home' element={<Home />} />
       </Routes>
       <Newsletter />
       <Footer />
