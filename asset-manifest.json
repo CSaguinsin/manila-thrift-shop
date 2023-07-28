@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/manila-thrift-shop/static/css/main.978bf806.css",
-    "main.js": "/manila-thrift-shop/static/js/main.470c5a6f.js",
+    "main.js": "/manila-thrift-shop/static/js/main.8e2d8e4c.js",
     "static/js/787.db1a6013.chunk.js": "/manila-thrift-shop/static/js/787.db1a6013.chunk.js",
     "static/media/sale3.png": "/manila-thrift-shop/static/media/sale3.f70abb774a1863a0cafb.png",
     "static/media/sale.png": "/manila-thrift-shop/static/media/sale.5c7cb3e99a9ef6af767d.png",
@@ -67,11 +67,11 @@
     "static/media/product9.png": "/manila-thrift-shop/static/media/product9.8a1ed9c0e58aa583cd09.png",
     "index.html": "/manila-thrift-shop/index.html",
     "main.978bf806.css.map": "/manila-thrift-shop/static/css/main.978bf806.css.map",
-    "main.470c5a6f.js.map": "/manila-thrift-shop/static/js/main.470c5a6f.js.map",
+    "main.8e2d8e4c.js.map": "/manila-thrift-shop/static/js/main.8e2d8e4c.js.map",
     "787.db1a6013.chunk.js.map": "/manila-thrift-shop/static/js/787.db1a6013.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.978bf806.css",
-    "static/js/main.470c5a6f.js"
+    "static/js/main.8e2d8e4c.js"
   ]
 }
