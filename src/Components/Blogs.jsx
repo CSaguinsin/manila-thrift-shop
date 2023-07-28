@@ -26,10 +26,10 @@ const Blogs = () => {
 
   return (
     <>
-        {/* <section>
+        <section>
             <img className='Logo' src={Logo} alt="Logo" />
             <h1 className='blogs'>BLOGS</h1>
-        </section> */}
+        </section>
 
         <section>
         <div className='container'>
