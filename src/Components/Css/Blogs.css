@@ -30,7 +30,9 @@
     max-width: 100%;
     height: auto;
     height: 600px;
+    border-radius: 20px;
   }
+
 
   @media (max-width: 768px) {
     .container {
@@ -87,9 +89,14 @@ p {
 
 .blogpost {
   height: 600px;
+  border-radius: 20px;
 }
 
 .blogpost3 {
   height: 600px;
   width: 400px;
+}
+
+.container {
+  padding-bottom: 30px;
 }
